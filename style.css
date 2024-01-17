@@ -83,3 +83,60 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+.primary-text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text{
+    margin-bottom: 5rem;
+    font-size:2rem;
+    color: rgb(128, 128, 128);
+    text-transform: uppercase;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn-main{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius:20px ;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btn-main:before{
+    content: '';
+    border-radius: 20px;
+    bottom:0 ;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height:60px ;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn-main:hover:before{
+    width: 100%;
+}
+
+.btn-main:hover{
+    color: rgb(251, 255, 0);
+    border: none;
+}
